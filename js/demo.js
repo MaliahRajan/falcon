@@ -4,12 +4,53 @@
 
   demoText = ['FALCON'.split(''), '2K17'.split('')];
 
-  logoSettings = {
-    size: 140,
-    margin: 15,
-    fontSize: 85,
-    perspective: 450
-  };
+    logoSettings = {
+      size: 135,
+      margin: 15,
+      fontSize: 80,
+      perspective: 450
+    };
+
+  if (window.matchMedia('(max-width: 1200px)').matches) {
+         logoSettings = {
+          size: 135,
+          margin: 15,
+          fontSize: 80,
+          perspective: 450
+        };
+  }
+  if (window.matchMedia('(max-width: 979px)').matches) {
+         logoSettings = {
+          size: 125,
+          margin: 12,
+          fontSize: 70,
+          perspective: 410
+        };
+  }
+  if (window.matchMedia('(max-width: 767px)').matches) {
+         logoSettings = {
+          size: 100,
+          margin: 10,
+          fontSize: 65,
+          perspective: 375
+        };
+  }
+  if (window.matchMedia('(max-width: 489px)').matches) {
+         logoSettings = {
+          size: 75,
+          margin: 8,
+          fontSize: 50,
+          perspective: 325
+        };
+  }
+  if (window.matchMedia('(max-width: 379px)').matches) {
+         logoSettings = {
+          size: 50,
+          margin: 5,
+          fontSize: 40,
+          perspective: 300
+        };
+  }
 
   makeObj = function(a) {
     var i, j, len1, o, v;
